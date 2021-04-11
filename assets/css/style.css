@@ -1,0 +1,260 @@
+@font-face{
+    font-family: Blue-Highway;
+    src: url("../vendor/font/blue highway rg.ttf");
+}
+body{
+    font-family: Blue-Highway;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Home Styling */
+#home{
+    width: 100%;
+    background: url("../vendor/img/ofspacebg.png") no-repeat;
+    height: 130vh;
+}
+
+#header .header-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+#header .nav-menu{
+    margin-left:7%;
+}
+#header .menu{
+    display: flex;
+}
+#header .logo a{
+    text-decoration: none;
+    color: #fff;
+}
+#header .logo a:hover{
+    opacity:0.8;
+    transition: all ease-in-out 0.6s;
+}
+#header .menu .nav-link{
+    font-family :'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    opacity: 0.7;
+}
+#header .menu .nav-link.active{
+    border-bottom: 2px solid #fff;
+}
+#header .menu .nav-link:hover{
+    color: #fff;
+    opacity: 1;
+    transition: ease 0.4s;
+}
+#header .sign-up-btn-container{
+    padding-top: 3px;
+    margin-left: -15%;
+}
+#header .sign-up-btn-container .btn{
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    opacity: 0.7;
+    border: 1.4px solid;
+    border-radius: 20px;
+    padding: 6px 22px;
+}
+#header .sign-up-btn-container .btn:hover{
+    opacity: 1;
+    background: #fff;
+    color: #111 !important;
+    transition: ease-in-out 0.6s;
+}
+
+#hero .txt-container{
+    text-align: center;
+    color: #fff;
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+#hero .txt-container p{
+    padding-top: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+    opacity: 0.7;
+}
+#hero .dashboard-container {
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-bottom: 40px;
+}
+#hero .dashboard-container img{
+    width: 100%;
+    box-shadow: 3px 18px 20px 0 rgb(74 100 164 / 40%);
+}
+
+
+/* Partners Section Styling */
+#partners{
+    padding-top: 10%;
+    padding-bottom: 8%;
+}
+#partners .img-container {
+    display: flex;
+    margin-left: 19%;
+    margin-right: 19%;
+    justify-content: space-evenly;
+}
+#partners img{
+    max-width: 110px;
+    filter: grayscale(100%);
+    opacity: 0.7;
+}
+#partners img:hover{
+    filter: grayscale(0);
+    transition: all ease-in-out 0.5s;
+}
+
+/* Why us Section styling */
+#whyus .first-container{
+    display: flex;
+    margin-left: 6%;
+    margin-right: 6%;
+}
+#whyus .first-container .whyussec{
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 40px;
+}
+#whyus .first-container .whyussec h2{
+    font-weight: bolder;
+    font-size:38px;
+    margin-top: 10px;
+}
+#whyus .first-container ,.whyussec p{
+    margin-top: 2.5rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+#whyus .first-container .whyussec .btn{
+    background: #0e927a;
+    color: rgba(255, 255, 255, 0.884);
+    padding: 10px 50px;
+    border-radius: 40px;
+    border: #0e927a solid 2px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+/* Button Hovering styling */
+#whyus .first-container .whyussec .btn:hover{
+    background: none;
+    color: #0e927a;
+    transition: all ease-in-out 0.4s;
+}
+#whyus .first-container .first-container-cards .arrow{
+    width: 20px;
+    margin-left: auto;
+    margin-right: 10px;
+}
+#whyus .first-container .first-container-cards .arrow i::before{
+    margin-left: auto;
+    margin-right: 0;
+    font-size: 15px;
+    border-radius: 50%;
+    padding: 15px 15px;
+}
+/* Arrow Styling */
+#whyus .first-container .first-container-cards .arrow .fa-arrow-right.white::before{
+    background: #fff;
+}
+#whyus .first-container .first-container-cards .arrow .fa-arrow-right.green::before{
+    background: #f6faf9;
+}
+#whyus img{
+    width: 25% !important;
+    margin-bottom: 10px;
+}
+#whyus .first-container .first-container-cards{
+    padding-top: 25px;
+    padding-left: 40px;
+    padding-right: 50px;
+    padding-bottom: 40px;
+}
+#whyus .first-container .first-container-cards h4{
+    font-weight: 500;
+}
+#whyus .first-container .first-container-cards p{
+    font-size: 12.45px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #777c82;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+#whyus .first-container .first-container-cards.green{
+    background: #f6faf9;
+}
+@media(min-width:1040px){
+    #whyus .first-container .whyussec{
+        padding-left: 49px;
+        padding-right: 60px;
+    }
+}
+
+
+#whyus .second-container{
+    display: flex;
+    margin-left: 14%;
+    margin-right: 6%;
+}
+#whyus .second-container .second-container-cards .arrow{
+    width: 20px;
+    margin-left: auto;
+    margin-right: 10px;
+}
+#whyus .second-container .second-container-cards .arrow i::before{
+    margin-left: auto;
+    margin-right: 0;
+    font-size: 15px;
+    border-radius: 50%;
+    padding: 15px 15px;
+}
+/* Arrow Styling */
+#whyus .second-container .second-container-cards .arrow .fa-arrow-right.white::before{
+    background: #fff;
+}
+#whyus .second-container .second-container-cards .arrow .fa-arrow-right.green::before{
+    background: #f6faf9;
+}
+#whyus img{
+    width: 25% !important;
+    margin-bottom: 10px;
+}
+#whyus .second-container .second-container-cards{
+    padding-top: 25px;
+    padding-left: 40px;
+    padding-right: 50px;
+    padding-bottom: 40px;
+}
+#whyus .second-container .second-container-cards h4{
+    font-weight: 500;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#whyus .second-container .second-container-cards p{
+    font-size: 12.45px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #777c82;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+}
+#whyus .second-container .second-container-cards.green{
+    background: #f6faf9;
+}
