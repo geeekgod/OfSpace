@@ -98,6 +98,7 @@ a{
 #hero .dashboard-container img{
     width: 100%;
     box-shadow: 3px 18px 20px 0 rgb(74 100 164 / 40%);
+    border-radius: 10px;   
 }
 
 
@@ -208,11 +209,11 @@ a{
     }
 }
 
-
 #whyus .second-container{
     display: flex;
-    margin-left: 14%;
+    margin-left: 15.6%;
     margin-right: 6%;
+    margin-bottom: 5%;
 }
 #whyus .second-container .second-container-cards .arrow{
     width: 20px;
@@ -257,4 +258,147 @@ a{
 }
 #whyus .second-container .second-container-cards.green{
     background: #f6faf9;
+}
+
+/* Company section styling */
+/* ---------------------------------- */
+/* Company Firsrt Section Styling */
+#company{
+    padding-top: 10%;
+    background: #fafafa;
+    padding-left: 6%;
+    padding-right:6%;
+}
+#company img{
+    width: 50%;
+}
+#company .company-1, .company-2, .company-3, .company-4{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 8%;
+}
+#company .company-1 .txt-container{
+    padding-right: 10%;
+    margin-top: auto;
+}
+#company h2{
+    margin-bottom: 40px;
+    font-size: 38px;
+    letter-spacing: -0.6px;
+}
+#company p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    color: #373737;
+    opacity: 0.9;
+}
+#company .company-1 .btn{
+    background: #0e927a;
+    color: rgba(255, 255, 255, 0.884);
+    padding: 10px 30px;
+    border-radius: 40px;
+    border: #0e927a solid 2px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    letter-spacing: 0.6px;
+    font-weight: 400;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* Button Hover Styling  */
+#company .company-1 .btn:hover{
+    background: none;
+    color: #0e927a;
+    transition: all ease-in-out 0.4s;
+}
+/* Company second section styling */
+#company .company-2 .txt-container{
+    padding-left: 10%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+/* Company Second section button styling */
+#company .company-2 .btn{
+    background: transparent;
+    color: #0e927a;
+    padding: 10px 30px;
+    border-radius: 40px;
+    border: #0e927a solid 2px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    letter-spacing: 0.6px;
+    font-weight: 400;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* Button Hover Styling  */
+#company .company-2 .btn:hover{
+    background: #0e927a;
+    color: rgba(255, 255, 255, 0.884);
+    transition: all ease-in-out 0.4s;
+}
+/* Company Third section styling */
+#company .company-3 .txt-container{
+    padding-right: 10%;
+    margin-top: auto;
+}
+/* Company third section button styling */
+#company .company-3 .btn{
+    background: #0e927a;
+    color: rgba(255, 255, 255, 0.884);
+    padding: 10px 30px;
+    border-radius: 40px;
+    border: #0e927a solid 2px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    letter-spacing: 0.6px;
+    font-weight: 400;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* Button Hover Styling  */
+#company .company-3 .btn:hover{
+    background: none;
+    color: #0e927a;
+    transition: all ease-in-out 0.4s;
+}
+/* Company Fourth section styling */
+#company .company-4 .txt-container{
+    padding-left: 10%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+/* Company fourth section button styling */
+#company .company-4 .btn{
+    background: transparent;
+    color: #0e927a;
+    padding: 10px 30px;
+    border-radius: 40px;
+    border: #0e927a solid 2px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    letter-spacing: 0.6px;
+    font-weight: 400;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* Button Hover Styling  */
+#company .company-4 .btn:hover{
+    background: #0e927a;
+    color: rgba(255, 255, 255, 0.884);
+    transition: all ease-in-out 0.4s;
+}
+/* -------------------------------------------------- */
+/* Client Section Stlying */
+#clients{
+    margin-top: 8%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#clients .client-head{
+    text-align: center;
+}
+#clients .client-head h2{
+    font-weight: 800;
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+#clients .client-head p{
+    color: #373737;
+    opacity: 0.9;
 }
