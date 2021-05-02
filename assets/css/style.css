@@ -22,9 +22,10 @@ a{
 #home{
     width: 100%;
     background: url("../vendor/img/ofspacebg.png") no-repeat;
-    height: 130vh;
 }
-
+.header{
+    position: relative;
+}
 #header .header-container{
     display: flex;
     justify-content: space-between;
@@ -59,11 +60,33 @@ a{
     opacity: 1;
     transition: ease 0.4s;
 }
+#header .menu .btn{
+    display: none;
+}
+/* Menu btn styling */
+.menu-btn{
+    color: #fff;
+    font-size: 26px;
+    display: none;
+    position: fixed !important;
+    left: auto;
+    right: 10%;;
+}
+.fa-bars:before {
+    content: "\f0c9";
+    transition: all ease-in-out 0.8s;
+}
+.menu.active{
+    left: 0 !important;
+}
+.menu-btn.active i::before{
+    content: "\f00d";
+}
 #header .sign-up-btn-container{
     padding-top: 3px;
     margin-left: -15%;
 }
-#header .sign-up-btn-container .btn{
+#header .btn{
     color: #fff;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     opacity: 0.7;
@@ -71,7 +94,7 @@ a{
     border-radius: 20px;
     padding: 6px 22px;
 }
-#header .sign-up-btn-container .btn:hover{
+#header .btn:hover{
     opacity: 1;
     background: #fff;
     color: #111 !important;
@@ -589,4 +612,141 @@ footer .footer-sect .creds span{
     font-size: 11px;
     opacity: 0.8;
     font-weight: 500;
+}
+/* Responsive Query starts here */
+@media(max-width:1020px){
+    #header .header-container{
+        margin-left: 2%;
+        margin-right: 2%;
+        justify-content: space-evenly;
+    }
+    #header .nav-menu{
+        margin-left: 0%;
+    }
+    #header .sign-up-btn-container{
+        margin-left: 0%;
+    }
+}
+@media(max-width:900px){
+    #header .header-container{
+        margin: 0;
+        justify-content: space-around;
+    }
+    #header .menu-btn{
+        display: block;
+        z-index: 990;
+        position: relative;
+    }
+    #header .menu{
+        display: block;
+        z-index: 900;
+        height: 100vh;
+        position: fixed;
+        background: #303030;
+        width: 100%;
+        text-align: center;
+        left: 100%;
+        transition: all ease-in-out 0.6s;
+        padding-top: 30%;
+        top: -10%;
+        height: 110%;
+    }
+    #header .nav-menu{
+        width: 100%;
+        z-index: 990;
+        position: absolute;
+    }
+    #header .menu .nav-link{
+        width: 100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #header .logo{
+        margin-left: 5%;
+        margin-right: auto;
+    }
+    #header .sign-up-btn-container{
+        display: none;
+    }
+    .header.sticky .menu-btn{
+        position: unset !important;
+        transition: all ease-in-out 0.4s;
+    }
+    .hero .dashboard-container{
+        margin-left: 5% !important;
+        margin-right: 5% !important;
+    }
+    #partners .img-container{
+        margin-left: 5% !important;
+        margin-right: 5% !important;
+    }
+    #whyus .first-container{
+        flex-direction: column;
+    }
+    #whyus .second-container{
+        flex-direction: column;
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+    #company img{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #company .company-1,.company-3{
+        flex-direction: column;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    #company .company-2,.company-4{
+        flex-direction: column-reverse;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    #company .txt-container{
+        padding-left: 5% !important;
+        padding-right: 5% !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media(max-width:700px){
+    #clients .client-details{
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #clients .client-details .sect{
+        margin-left: auto !important;
+        margin-right: auto !important;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .footer-sect{
+        flex-direction: column;
+    }
+    .footer-sect .signup-sect,.menu-sect{
+        width: 100% !important;
+        padding-bottom: 60px;
+        padding-left: 8% !important;
+        padding-right: 10% !important;
+    }
+}
+
+@media(max-width:600px){
+    #partners .img-container{
+        flex-direction: column;
+    }
+    #partners img{
+        max-width: 40% !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media(max-width:400px){
+    #clients .client-details .sect{
+        width: 85% !important;
+    }
 }
